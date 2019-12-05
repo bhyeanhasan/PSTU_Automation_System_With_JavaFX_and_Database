@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="593.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Launch.admitController">
+   <children>
+      <Pane layoutX="43.0" layoutY="31.0" prefHeight="442.0" prefWidth="493.0" style="-fx-border-color: blue; -fx-border-radius: 20; -fx-border-width: 3;" />
+      <Label layoutX="212.0" layoutY="55.0" text="Patuakhali Science and Technology University" />
+      <Label layoutX="120.0" layoutY="177.0" text="Name                             :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="122.0" layoutY="248.0" text="Redestration num         :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="122.0" layoutY="335.0" text="Semester                      :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="122.0" layoutY="288.0" text="Faculty                          :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="62.0" fitWidth="128.0" layoutX="111.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pstu.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="259.0" layoutY="84.0" text="Dumki,Patuakhali-8602" />
+      <Label layoutX="276.0" layoutY="110.0" text="ADMIT CARD" />
+      <Label layoutX="69.0" layoutY="391.0" text="_________________________" />
+      <Label layoutX="384.0" layoutY="391.0" text="_________________________" />
+      <Label layoutX="66.0" layoutY="420.0" text="Signature of the Student" />
+      <Label layoutX="375.0" layoutY="422.0" text="Controller of Examinations" />
+      <Label layoutX="276.0" layoutY="187.0" prefHeight="17.0" prefWidth="241.0" />
+      <Label layoutX="106.0" layoutY="117.0" prefHeight="17.0" prefWidth="397.0" text="___________________________________________________________________________" />
+      <Label layoutX="106.0" layoutY="127.0" prefHeight="17.0" prefWidth="397.0" text="___________________________________________________________________________" />
+      <Label layoutX="121.0" layoutY="213.0" text="Roll                                :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="277.0" layoutY="214.0" prefHeight="17.0" prefWidth="241.0" />
+   </children>
+</AnchorPane>
