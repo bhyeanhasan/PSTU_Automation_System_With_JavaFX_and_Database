@@ -1,42 +1,59 @@
 
 package Launch;
 
-import java.io.IOException;
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ResourceBundle;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
-import net.proteanit.sql.DbUtils;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 
 public class DeanController implements Initializable {
     
-    Connection con=null;
-    PreparedStatement pp;
-    ResultSet r;
+        // The table and columns
+    @FXML
+    TableView<DeanController> itemTbl;
+ 
+    @FXML
+    TableColumn itemIdCol;
+    @FXML
+    TableColumn itemNameCol;
+    @FXML
+    TableColumn itemQtyCol;
+    @FXML
+    TableColumn itemPriceCol;
+ 
+    // The table's data
+    ObservableList<DeanController> data;
     
-     @FXML
-    private TableColumn<?, ?> table;
-     
-     @FXML
-    private void dean(ActionEvent event) throws IOException, SQLException {
+    @FXML
+    private void handleButtonAction(ActionEvent event){
        
-        connection conn=new connection();
-        con=conn.connect();
-        pp= con.prepareStatement("select * from dean");
-        r=pp.executeQuery();
-        table.setModel(DbUtils.resultSetToTableModel(r));
     }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        itemIdCol.setCellValueFactory(
+            new PropertyValueFactory<DeanController,String>("id")
+        );
+        itemNameCol.setCellValueFactory(
+            new PropertyValueFactory<DeanController,String>("name")
+        );
+        itemQtyCol.setCellValueFactory(
+            new PropertyValueFactory<DeanController,Integer>("qty")
+        );
+        itemPriceCol.setCellValueFactory(
+            new PropertyValueFactory<DeanController,String>("price")
+        );
+ 
+        data = FXCollections.observableArrayList();
+        itemTbl.setItems(data);
     }    
     
 }

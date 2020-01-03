@@ -2,17 +2,49 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" fx:id="windo" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Launch.AdminController">
+<AnchorPane id="AnchorPane" fx:id="windo" prefHeight="494.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Launch.AdminController">
    <children>
-      <PasswordField layoutX="276.0" layoutY="175.0" />
-      <Label layoutX="197.0" layoutY="179.0" text="Password" />
-      <Label layoutX="197.0" layoutY="137.0" text="User name" />
-      <TextField layoutX="276.0" layoutY="133.0" />
-      <Button fx:id="adminBtn" layoutX="300.0" layoutY="244.0" mnemonicParsing="false" text="Log In" />
+      <Pane layoutX="384.0" layoutY="369.0" prefHeight="106.0" prefWidth="186.0" style="-fx-background-color: red; -fx-background-radius: 30;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="61.0" layoutY="15.0" text="Delete ID" textFill="#2c1616">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dltid" layoutX="39.0" layoutY="41.0" prefHeight="25.0" prefWidth="111.0" />
+            <Button fx:id="adminBtn" layoutX="56.0" layoutY="75.0" mnemonicParsing="false" onAction="#deleteButtonAction" prefHeight="25.0" prefWidth="77.0" text="DELETE" />
+         </children>
+      </Pane>
+      <Pane layoutX="382.0" layoutY="106.0" prefHeight="224.0" prefWidth="186.0" style="-fx-background-color: green; -fx-background-radius: 30;">
+         <children>
+            <TextField fx:id="session" layoutX="71.0" layoutY="159.0" prefHeight="25.0" prefWidth="111.0" />
+            <TextField fx:id="faculty" layoutX="71.0" layoutY="124.0" prefHeight="25.0" prefWidth="111.0" />
+            <TextField fx:id="name" layoutX="71.0" layoutY="89.0" prefHeight="25.0" prefWidth="111.0" />
+            <TextField fx:id="id" layoutX="71.0" layoutY="21.0" prefHeight="25.0" prefWidth="111.0" />
+            <TextField fx:id="reg" layoutX="71.0" layoutY="53.0" prefHeight="25.0" prefWidth="111.0" />
+            <Label layoutX="14.0" layoutY="25.0" text="ID" />
+            <Label layoutX="14.0" layoutY="57.0" text="Reg" />
+            <Label layoutX="15.0" layoutY="93.0" text="Name" />
+            <Label layoutX="14.0" layoutY="128.0" text="Faculty" />
+            <Label layoutX="15.0" layoutY="163.0" text="Session" />
+            <Button fx:id="insbtn" layoutX="67.0" layoutY="194.0" mnemonicParsing="false" onAction="#handleButtonAction" text="INSERT" />
+         </children>
+      </Pane>
+      <TableView fx:id="table" layoutX="11.0" layoutY="102.0" prefHeight="370.0" prefWidth="357.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="66.0" text="ID" />
+          <TableColumn fx:id="regCol" prefWidth="67.0" text="Reg" />
+            <TableColumn fx:id="nameCol" prefWidth="109.0" text="Name" />
+            <TableColumn fx:id="facultyCol" prefWidth="58.0" text="Faculty" />
+            <TableColumn fx:id="sessionCol" prefWidth="56.0" text="Session" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>

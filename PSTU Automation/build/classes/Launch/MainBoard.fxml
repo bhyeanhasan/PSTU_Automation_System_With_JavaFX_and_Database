@@ -7,32 +7,28 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="main" prefHeight="600.0" prefWidth="772.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Launch.MainBoard">
+<AnchorPane id="AnchorPane" fx:id="main" prefHeight="600.0" prefWidth="772.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Launch.MainBoard">
     <children>
       <AnchorPane layoutY="103.0" prefHeight="497.0" prefWidth="187.0" style="-fx-background-color: rgb(102, 51, 153); -fx-background-radius: 0 40 0 0;">
          <children>
-              <Button fx:id="bankBtn" layoutY="97.0" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="162.0" style="-fx-background-color: rgba(108, 122, 137, 1); -fx-border-color: rgb(255, 246, 143); -fx-border-radius: 0 20 20 0; -fx-border-width: 1; -fx-background-radius: 0 20 20 0;" text="Bank Admin Panel" textFill="#f8f6f6" textOverrun="CENTER_ELLIPSIS">
+              <Button fx:id="bankBtn" layoutX="1.0" layoutY="196.0" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="162.0" style="-fx-background-color: rgba(108, 122, 137, 1); -fx-border-color: rgb(255, 246, 143); -fx-border-radius: 0 20 20 0; -fx-border-width: 1; -fx-background-radius: 0 20 20 0;" text="Bank Admin Panel" textFill="#f8f6f6" textOverrun="CENTER_ELLIPSIS">
                <font>
                   <Font name="Comic Sans MS Bold" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="adminBtn" layoutY="150.0" mnemonicParsing="false" onAction="#adminAction" prefHeight="36.0" prefWidth="162.0" style="-fx-background-color: rgba(108, 122, 137, 1); -fx-border-color: rgb(255, 246, 143); -fx-background-radius: 0 20 20 0; -fx-border-radius: 0 20 20 0; -fx-border-width: 1;" text="Administration" textFill="#f8f6f6">
+            <Button fx:id="adminBtn" layoutY="96.0" mnemonicParsing="false" onAction="#adminAction" prefHeight="36.0" prefWidth="162.0" style="-fx-background-color: rgba(108, 122, 137, 1); -fx-border-color: rgb(255, 246, 143); -fx-background-radius: 0 20 20 0; -fx-border-radius: 0 20 20 0; -fx-border-width: 1;" text="Administration" textFill="#f8f6f6">
                <font>
                   <Font name="Comic Sans MS Bold" size="15.0" />
                </font></Button>
-            <Button fx:id="hallBtn" layoutY="199.0" mnemonicParsing="false" onAction="#hallAction" prefHeight="32.0" prefWidth="162.0" style="-fx-background-color: rgba(108, 122, 137, 1); -fx-background-radius: 0 20 20 0; -fx-border-color: rgb(255, 246, 143); -fx-border-radius: 0 20 20 0;" text="Residential" textFill="#f8f6f6">
+            <Button fx:id="hallBtn" layoutX="1.0" layoutY="249.0" mnemonicParsing="false" onAction="#hallAction" prefHeight="32.0" prefWidth="162.0" style="-fx-background-color: rgba(108, 122, 137, 1); -fx-background-radius: 0 20 20 0; -fx-border-color: rgb(255, 246, 143); -fx-border-radius: 0 20 20 0;" text="Residential" textFill="#f8f6f6">
                <font>
                   <Font name="Comic Sans MS Bold" size="15.0" />
                </font></Button>
-            <Button fx:id="deanBtn" layoutY="246.0" mnemonicParsing="false" onAction="#deanAction" prefHeight="32.0" prefWidth="162.0" style="-fx-background-color: rgba(108, 122, 137, 1); -fx-background-radius: 0 20 20 0; -fx-border-color: rgb(255, 246, 143); -fx-border-radius: 0 20 20 0;" text="Dean Office" textFill="#f8f6f6">
+            <Button fx:id="enrolmentBtn" layoutY="148.0" mnemonicParsing="false" onAction="#enrolmentAction" prefHeight="32.0" prefWidth="162.0" style="-fx-background-color: rgba(108, 122, 137, 1); -fx-background-radius: 0 20 20 0; -fx-border-color: rgb(255, 246, 143); -fx-border-radius: 0 20 20 0;" text="Enrolment" textFill="#f8f6f6">
                <font>
                   <Font name="Comic Sans MS Bold" size="15.0" />
                </font></Button>
-            <Button fx:id="enrolmentBtn" layoutY="293.0" mnemonicParsing="false" onAction="#enrolmentAction" prefHeight="32.0" prefWidth="162.0" style="-fx-background-color: rgba(108, 122, 137, 1); -fx-background-radius: 0 20 20 0; -fx-border-color: rgb(255, 246, 143); -fx-border-radius: 0 20 20 0;" text="Enrolment" textFill="#f8f6f6">
-               <font>
-                  <Font name="Comic Sans MS Bold" size="15.0" />
-               </font></Button>
-            <Button fx:id="admitBtn" layoutY="339.0" mnemonicParsing="false" onAction="#admitAction" prefHeight="32.0" prefWidth="162.0" style="-fx-background-color: rgba(108, 122, 137, 1); -fx-background-radius: 0 20 20 0; -fx-border-color: rgb(255, 246, 143); -fx-border-radius: 0 20 20 0;" text="Admit Card Download" textFill="#f8f6f6">
+            <Button fx:id="admitBtn" layoutY="298.0" mnemonicParsing="false" onAction="#admitAction" prefHeight="32.0" prefWidth="162.0" style="-fx-background-color: rgba(108, 122, 137, 1); -fx-background-radius: 0 20 20 0; -fx-border-color: rgb(255, 246, 143); -fx-border-radius: 0 20 20 0;" text="Admit Card Download" textFill="#f8f6f6">
                <font>
                   <Font name="Comic Sans MS" size="14.0" />
                </font></Button>

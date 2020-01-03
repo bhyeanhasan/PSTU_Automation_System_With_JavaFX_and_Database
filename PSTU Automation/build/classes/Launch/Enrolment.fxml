@@ -3,26 +3,61 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Launch.EnrolmentController">
+<AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Launch.EnrolmentController">
    <children>
-      <Pane layoutX="114.0" layoutY="136.0" prefHeight="232.0" prefWidth="336.0" style="-fx-background-color: rgb(44, 62, 80); -fx-background-radius: 10;" />
-      <TextField layoutX="240.0" layoutY="155.0" />
-      <Label layoutX="152.0" layoutY="159.0" text="ID" textFill="WHITE" />
-      <TextField layoutX="240.0" layoutY="195.0" />
-      <Label layoutX="152.0" layoutY="199.0" text="Reg" textFill="#f8f7f7" />
-      <TextField layoutX="240.0" layoutY="236.0" />
-      <Label layoutX="152.0" layoutY="240.0" text="Semester" textFill="#fcfcfc" />
-      <TextField layoutX="240.0" layoutY="275.0" />
-      <Label layoutX="152.0" layoutY="279.0" text="Total Credit" textFill="#fcfafa" />
-      <Button layoutX="243.0" layoutY="324.0" mnemonicParsing="false" text="Apply" />
-      <Label layoutX="115.0" layoutY="85.0" prefHeight="47.0" prefWidth="336.0" style="-fx-background-radius: 20;" text="Complete Payment Procedure Before Applying">
+      <Pane layoutX="186.0" layoutY="191.0" prefHeight="232.0" prefWidth="296.0" style="-fx-background-color: dc2679; -fx-background-radius: 10;" />
+      <ImageView fitHeight="448.0" fitWidth="283.0" layoutX="252.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@mobile.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="id" layoutX="318.0" layoutY="216.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="206.0" layoutY="217.0" prefHeight="25.0" prefWidth="73.0" style="-fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2;" text="ID" textAlignment="CENTER" textFill="#111111" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextField layoutX="318.0" layoutY="256.0" />
+      <TextField layoutX="318.0" layoutY="297.0" />
+      <TextField fx:id="trx" layoutX="318.0" layoutY="336.0" />
+      <Button layoutX="364.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="59.0" style="-fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2;" text="OK">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label layoutX="152.0" layoutY="16.0" prefHeight="47.0" prefWidth="336.0" style="-fx-background-radius: 20;" text="Complete Payment Procedure Before Applying">
          <font>
             <Font name="Comic Sans MS Bold" size="15.0" />
          </font>
       </Label>
+      <ImageView fitHeight="67.0" fitWidth="180.0" layoutX="356.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@unnamed.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="206.0" layoutY="256.0" prefHeight="25.0" prefWidth="73.0" style="-fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2;" text="Reg" textAlignment="CENTER" textFill="#111111" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="206.0" layoutY="297.0" prefHeight="25.0" prefWidth="73.0" style="-fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2;" text="Name" textAlignment="CENTER" textFill="#111111" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="206.0" layoutY="336.0" prefHeight="25.0" prefWidth="73.0" style="-fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2;" text="Trx ID" textAlignment="CENTER" textFill="#111111" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="80.0" fitWidth="240.0" layoutX="66.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bkash.gif" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

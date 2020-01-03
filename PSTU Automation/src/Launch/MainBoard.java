@@ -1,6 +1,14 @@
 
 package Launch;
 
+/*
+    Md Babul Hasan (Noyen)
+    Patuakhali Science and Technology University
+    Faculty of Computer Science and Engineering
+    16 th Batch (PSTU-CSE-2019)
+    bhyean@gmail.com // B H Yean Hasan
+*/
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -65,10 +73,8 @@ public class MainBoard implements Initializable {
 
     @FXML
     private void deanAction(ActionEvent event) throws IOException {
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("Dean.fxml"));
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("Admin.fxml"));
         window.getChildren().setAll(pane);
-        
-        
     }    
    
     @FXML

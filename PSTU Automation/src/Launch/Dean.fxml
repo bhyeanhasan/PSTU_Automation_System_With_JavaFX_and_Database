@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.AnchorPane?>
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Launch.DeanController">
-   <children>
-      <TableView layoutX="108.0" layoutY="31.0" prefHeight="320.0" prefWidth="435.0">
-        <columns>
-          <TableColumn fx:id="table" prefWidth="194.0" text="ID" />
-          <TableColumn prefWidth="277.0" text="Bill" />
-        </columns>
-      </TableView>
-      <Button fx:id="btn" layoutX="27.0" layoutY="143.0" mnemonicParsing="false" onAction="#dean" text="Button" />
-   </children>
+ 
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+ 
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml" fx:controller="Launch.DeanController">
+  <children>
+    <Button fx:id="button" layoutX="406.0" layoutY="365.0" onAction="#handleButtonAction" text="Add Row" />
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <TableView fx:id="itemTbl" layoutX="14.0" layoutY="14.0" prefHeight="334.0" prefWidth="470.0">
+      <columns>
+        <TableColumn prefWidth="75.0" text="Item ID" fx:id="itemIdCol" />
+        <TableColumn prefWidth="243.0" text="Item Name" fx:id="itemNameCol" />
+        <TableColumn prefWidth="75.0" text="Qty" fx:id="itemQtyCol" />
+        <TableColumn prefWidth="75.0" text="Price" fx:id="itemPriceCol" />
+      </columns>
+    </TableView>
+  </children>
 </AnchorPane>
